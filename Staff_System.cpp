@@ -14,7 +14,7 @@ Staff staff[10] =
     
 string name, id, gender, department, position, clock_in, clock_out;
 int    year_started, age;
-double salary;
+float salary;
 
 bool mainCondition = true, statusFound = false;
 int  menuOptions, staff_count = 3, matchedIndex, matches[10], count;
