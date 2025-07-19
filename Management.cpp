@@ -16,7 +16,7 @@ salary = -1;
 clock_in = "Unknown";
 clock_out = "Unknown";
 }
-Staff::Staff(string Name, int Age, string ID, string Gender,string Department, string Position, int Year_Started,int Salary, string in, string out){
+Staff::Staff(string Name, int Age, string ID, string Gender,string Department, string Position, int Year_Started,float Salary, string in, string out){
 name = Name;
 age = Age;
 id = ID;
@@ -53,7 +53,7 @@ this -> clock_out = clock_out;
 void Staff::setAge(int age){
 this -> age = age;
 }
-void Staff::setSalary(int salary){
+void Staff::setSalary(float salary){
 this -> salary = salary;
 }
 void Staff::setYear(int year_started){
@@ -84,7 +84,7 @@ return clock_out;
 int Staff::getAge(){
 return age;
 };
-double Staff::getSalary(){
+float Staff::getSalary(){
 return salary;
 };
 int Staff::getYear(){
@@ -122,4 +122,3 @@ void Staff::saveToFile(ofstream& file){
          << department << "," << position << "," << year_started << "," 
          << salary << "," << clock_in << "," << clock_out << "\n";
 };
-
