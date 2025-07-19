@@ -17,7 +17,7 @@ Staff::Staff() {
     clock_out = "Unknown";
 }
 
-Staff::Staff(string Name, int Age, string ID, string Gender, string Department, string Position, int Year_Started, int Salary, string in, string out) {
+Staff::Staff(string Name, int Age, string ID, string Gender, string Department, string Position, int Year_Started, float Salary, string in, string out) {
     name = Name;
     age = Age;
     id = ID;
@@ -62,7 +62,7 @@ void Staff::setAge(int age) {
     this->age = age;
 }
 
-void Staff::setSalary(int salary) {
+void Staff::setSalary(float salary) {
     this->salary = salary;
 }
 
@@ -102,7 +102,7 @@ int Staff::getAge() {
     return age;
 }
 
-double Staff::getSalary() {
+float Staff::getSalary() {
     return salary;
 }
 
